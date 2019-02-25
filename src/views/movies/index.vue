@@ -79,9 +79,9 @@ export default {
 
 <style rel="stylesheet/scss" lang="scss" scoped>
 .index-container {
-  margin-top: 70px;
+  margin-top: 65px;
   section {
-    width: 745px;
+    width: 1000px;
   }
 }
 </style>
