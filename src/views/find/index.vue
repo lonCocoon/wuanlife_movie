@@ -66,7 +66,7 @@ export default {
 
 <style rel="stylesheet/scss" lang="scss" scoped>
 .index-container {
-  margin-top: 70px;
+  margin-top: 65px;
   section {
      .form-item{
       display: flex;
@@ -113,7 +113,7 @@ export default {
           color: #444444;
           background-color: rgba(209, 209, 209, 0.3);
           border-radius: 4px;
-          border: solid 2px rgba(209, 209, 209, 0.3);
+          border: solid 1px rgba(209, 209, 209, 0.3);
           padding: 0 16px;
         }
         &>input:focus{
