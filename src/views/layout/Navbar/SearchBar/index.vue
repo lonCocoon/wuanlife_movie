@@ -42,9 +42,9 @@ export default {
     flex: 0.8;
   }
   .search /deep/ input {
-    height: 40px;
-    padding: 13px 20px 12px 19px;
-    font-size: 14px;
+    height: 32px;
+    // padding: 13px 20px 12px 19px;
+    font-size: 12px;
     color: #fcced2;
     background-color: rgba(255, 255, 255, 0.2);
     border: 0;
@@ -54,10 +54,9 @@ export default {
   }
   #icon-search {
     cursor: pointer;
-    margin-right: 20px;
-    font-size: 18px;
+    margin-right: 10px;
+    font-size: 14px;
     color: #fcced2;
-    margin-top: 10px;
   }
 }
 </style>

@@ -1,9 +1,11 @@
 <template>
   <div class="navbar">
-    <div class="navbar-header">
-      <div class="logo" @click="$router.push({path: '/'})">午安影视</div>
-      <search-bar></search-bar>
-      <nav-user></nav-user>
+    <div class="navbar-header-wrap">
+      <div class="navbar-header">
+        <div class="logo" @click="$router.push({path: '/'})">午安影视</div>
+        <search-bar></search-bar>
+        <nav-user></nav-user>
+      </div>
     </div>
     <div class="navber-menu">
       <nav-list></nav-list>
@@ -58,28 +60,38 @@ export default {
 </script>
 
 <style rel="stylesheet/scss" lang="scss" scoped>
+// @import '../../../styles/theme-default/global/site.scss';
+
 .navbar {
+  z-index: 100;
   height: $nav-height;
-  max-width: 1260px;
   width: 100%;
   display: flex;
   flex-direction: column;
+  .navbar-header-wrap{
+    z-index: 100;
+    background-color: #f32941;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
   .navbar-header{
     display: flex;
     flex: 1;
     justify-content: space-between;
     align-items: stretch;
-    height: 55px;
+    width: 1260px;
+    height: 58px;
+    margin: 0 auto;
     .logo{
       cursor: pointer;
       color: #fff;
-      font-size: 30px;
+      font-size: 24px;
       display: flex;
       align-items: center;
     }
   }
   .navber-menu{
-    height: 41px;
+    width: 100%;
+    height: 44px;
     display: flex;
   }
 }
