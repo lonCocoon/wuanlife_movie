@@ -25,7 +25,8 @@ export default {
 <style rel="stylesheet/scss" lang="scss" scoped>
 .app-wrapper {
   @include clearfix;
-  position: relative;
+  position: fixed;
+  top:0;
   height: 100%;
   width: 100%;
   min-width: 1000px;
@@ -37,8 +38,9 @@ export default {
     background-color: #f8f9fa;
   }
   .main-container {
+    margin-top: 128px;
     background-color: #f8f9fa;
-    height: calc(100vh - #{$nav-height - 14px});
+    height: calc(100vh - #{$nav-height - 22px});
     overflow: auto;
     transition: all 0.28s ease-out;
     padding-bottom: 60px;
